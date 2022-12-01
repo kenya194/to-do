@@ -34,7 +34,7 @@ window.addEventListener( 'load', () => {
 
 
 function displayTodos() {
-    const todoList = document.querySelector('#todo-list');
+    const todoList = document.querySelector('#todolist');
 
     todoList.innerHTML= '';
 
@@ -60,15 +60,17 @@ function displayTodos() {
         edit.classList.add('edit');
         deletebuttom.classList.add('delete');
 
-        content.innerHTML = `<input type="text" value ="$(todo.content)" readonly>`;
+        content.innerHTML = `<input type="text" value ="${todo.content}" readonly>`;
         edit.innerHTML = 'edit';
-        deletebuttom = 'delete';
+        deletebuttom.innerHTML = 'delete';
 
         label.appendChild(input);
         label.appendChild(span);
         actions.appendChild(label);
         todoitem.appendChild(content);
         todoitem.appendChild(actions);
+         actions.appendChild(edit);
+        actions.appendChild(deletebuttom);
 
         todoList.appendChild(todoitem);
 

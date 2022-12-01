@@ -148,11 +148,11 @@ input:checked ~ .bubble::after{
     opacity: 0.78;
 }
 
-.todolist .list{
+.todo-list .list{
     margin: 1rem 0;
 }
 
-.todolist .todo-item{
+.todo-list .todo-item{
     display: flex;
     align-items: center;
     background-color: white;
